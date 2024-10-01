@@ -1,0 +1,42 @@
+.base-button {
+  max-height: 70px;
+  min-height: 70px;
+  background-color: #2d3e4e;
+  border-radius: 70px;
+  color: white;
+  border: 1px solid white;
+  width: 100%;
+  &.default {
+    text-align: center;
+    padding-left: 33px;
+    padding-right: 33px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: clip;
+  }
+  & .wrapper-icon {
+    display: flex;
+    padding-left: 27px;
+    padding-right: 19px;
+    align-items: center;
+    gap: 16px;
+    & .icon {
+      min-width: 22px;
+      min-height: 22px;
+    }
+    & .icon-text {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  &:disabled {
+    background-color: grey !important;
+    cursor: unset;
+    transform: none;
+  }
+}

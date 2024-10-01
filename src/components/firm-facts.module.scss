@@ -1,0 +1,17 @@
+.firm-facts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto); 
+  gap: 18px;
+  height: 100%;
+  border-top: 1px;
+  border-color: rgba(255, 255, 255, 0.2);
+  border-top-style: solid;
+  margin-top: 22px;
+  padding-top: 51px;
+  margin-bottom: 85px;
+  & :first-child{
+      grid-column: 1;
+      grid-row: span 2;
+  }
+}

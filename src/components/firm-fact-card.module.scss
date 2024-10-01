@@ -1,0 +1,28 @@
+$green: #07c06a;
+.wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border: 15px solid transparent;
+  &.default {
+    align-items: center;
+    &:hover {
+      background-color: $green;
+      & button {
+        background-color: $green;
+      }
+    }
+  }
+  &.border {
+    align-items: start;
+    padding-top: 35px;
+    &:hover {
+      border-color: $green;
+      & button {
+        background-color: $green;
+      }
+    }
+  }
+}
